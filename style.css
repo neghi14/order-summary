@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.container{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card{
+    background-color: #fff;
+    width: 400px;
+    margin: 150px auto;
+    display: grid;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.card> img{
+    width: 100%;
+}
+
+.header{
+    text-align: center;
+    margin: 24px;
+}
+
+.header h1{
+    padding: 0;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 16px 0;
+    color: hsl(223, 47%, 23%);
+}
+
+.header p{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin: 16px;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    margin: 0 44px;
+    background-color: hsl(225, 100%, 98%); 
+    padding: 16px;
+    border-radius: 16px;   
+}
+
+.details img{
+    margin-right: 16px;
+}
+.details h2{
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    color: hsl(223, 47%, 23%);    
+}
+
+.details p{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);    
+}
+
+.details a{
+    font-weight: 900;
+}
+
+.pay{
+    display: grid;
+    justify-content: center;
+    margin: 24px 0;
+    text-align: center;
+}
+
+.btn{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 16px 70px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background-color: hsl(245, 72%, 39%) ;
+}
+.pay a{
+    text-decoration: none;
+}
+
+.btn-2{
+    font-size: 16px;
+    margin: 16px 0;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+@media(max-width:48rem){
+    body{
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+    .card{
+        width: 380px;
+    }    
+}
